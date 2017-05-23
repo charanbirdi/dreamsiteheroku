@@ -1,0 +1,105 @@
+* {
+  margin: 0px;
+  padding: 2px;
+  box-sizing: border-box;
+  color: black;  
+  font-family: 'Roboto';
+  font-weight: 400;
+  letter-spacing: 0.9px;
+  line-height: 1.4em;
+}
+
+body { margin: 0px; font-size: 18px;}
+li { font-size: 1em; text-align: left; margin-bottom: 7px; }
+html, body {height: auto; width: 100%; }
+
+//h1, h2, h3, h4, p, small {margin: 10px 10px 5px 10px; }
+//p, small {margin: 10px 10px 5px 10px; }
+
+
+/* -------------HOME container------------   */
+#header {position: fixed; background-color: white; width: 100%;}
+.home-container {max-width: 100%; height: auto; margin-left: auto; margin-right: auto; margin-top: 130px;}
+
+/*
+#leftbar {float: left; width: 15%; min-height: 100%; font-size: 0.9em; text-transform: uppercase; letter-spacing: 2px; text-align: left; margin-bottom: 15px; color: #aaaaaa; }
+#middlebar {float: left; width: 60%; font-size: 0.9em; text-transform: uppercase; letter-spacing: 2px; text-align: left; margin-bottom: 15px; color: #aaaaaa; margin: 5px 10px 10px 10px; }
+#rightbar {float: right; width: 20%; min-height: 100%; font-size: 0.9em; text-transform: uppercase; letter-spacing: 2px; text-align: left; color: #aaaaaa; margin: 5px 10px auto 10px; border: solid; display: block;}
+*/
+#leftbar {position: fixed; float: left; width: 20%; min-height: 100%; font-size: 0.9em; text-transform: uppercase; letter-spacing: 2px; text-align: left; margin-bottom: 15px; color: #aaaaaa; }
+#middlebar {float: left; width: 60%; font-size: 1em; letter-spacing: 2px; text-align: left; margin-bottom: 15px; color: #aaaaaa; margin-left: 22%; }
+#rightbar {position: fixed; float: left; width: 16%; min-height: 100%; font-size: 0.9em; text-transform: uppercase; letter-spacing: 2px; text-align: left; color: #aaaaaa; margin-left: 82%; margin-top: 0; border: solid;  border-width: 0px; border-color: rgba(96, 125, 139, 0.38);}
+
+
+/* ----------end of HOME container--  ----------   */
+
+
+
+
+/* -------------this is for LOGO icon and text------------   */
+#logo {display: inline-block; margin: 4px; }
+#logo span {font-size: 18px; }
+#logoicon {display: inline-block; vertical-align: middle; }
+
+.top {width:100%; margin: 2px 0; padding-bottom: 7px; border-bottom: solid;  border-bottom-width: 0.3px; border-color: rgba(96, 125, 139, 0.38);}
+.top li a {padding: 8px; border: solid; color: white; background-color: blue; border-radius: 0px;}
+/* ----------end of this is for LOGO icon and text------------   */
+
+
+/* -------------this is for left side column------------   */
+.text_left {
+  width: 100%;
+  padding: 35px 20px 5px 20px;
+  color: blue;
+  margin-bottom: 7px;
+  border-bottom: 1px solid rgba(96, 125, 139, 0.38);
+  font-size: 13px;
+}
+
+.div-category-text {
+  width: 70%;
+  margin-top: 7px;
+  font-size: 12px;  
+  display: table;
+  margin-left: 37px;
+  padding: 2px;
+}
+
+.div-category-text a {text-align: left; font-size: 12px;}
+
+.div-category-text:hover { background-color: blue; color: white;}
+
+/* -------end of this is for left side column-----------   */
+
+.toplist li {display:inline; padding: 2rem 1rem; font-size: 14px; font-weight: 800;}
+
+a {    
+    text-decoration: none;
+    text-align: center;   
+
+  }
+//a:hover { border-bottom: 1px dashed #428bca; }
+
+.dash { height: 1px; width: 30%; background: black; margin: 20px auto; }
+
+h5 {
+    font-style: normal;
+    letter-spacing: 3px;
+    font-size: 1.2em;
+    font-weight: 400;
+}
+
+
+
+/* iphone 5 only Mobile ----------- */
+@media only screen and (max-width: 320px) {
+}
+
+
+/* Mobile -----------outline-width:  */
+@media only screen and (min-width: 667px) {
+}
+
+/* Desktops and laptops ----------- */
+@media only screen and (min-width: 1024px) {
+}

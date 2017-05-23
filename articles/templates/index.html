@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+
+{% block content %}	
+    
+
+<p>Total Articles {{ total }}</p>
+
+    {% if latest_articles %}
+
+    		{% for articles in latest_articles %}
+    			
+                <div id="outer">
+                    <div id="img" style="height: 250px; background-image: url('{{ articles.imgpath }}');">
+                        <!--img src={{ articles.imgpath }}-->
+                    </div>                    
+
+                    <div>
+                        <p id="title"> <a href="{% url articles.path %}"> {{ articles.title }} </a></p>
+                        <p>{{ articles.content }}</p>
+                        <p class="date">{{ articles.auther }}</p>
+                        <p class="date">{{ articles.updated }}</p>
+                    </div>
+
+                </div>              
+
+    		{% endfor %}            
+    	
+    {% else %}
+    	<p>No Articles is there.</p>
+    {% endif %}
+
+
+            <div class="pagination">
+                <span class="step-links">
+                    {% if latest_articles.has_previous %}
+                        <a href="?page={{ latest_articles.previous_page_number }}">previous</a>
+                    {% endif %}
+
+                <span class="current">
+                    Page {{ latest_articles.number }} of {{ latest_articles.paginator.num_pages }}
+                </span>
+
+                    {% if latest_articles.has_next %}
+                        <a href="?page={{ latest_articles.next_page_number }}">next</a>
+                    {% endif %}
+                </span>
+            </div>
+
+{% endblock %}            
