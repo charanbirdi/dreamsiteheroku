@@ -89,7 +89,7 @@ DATABASES = {
         'USER': 'charanbirdi',
         'PASSWORD': 'googleapple!1',
         'HOST': 'localhost',
-        'PORT': '',
+        'PORT': '5432',
     }
 }
 
